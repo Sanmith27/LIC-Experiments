@@ -7,7 +7,7 @@ Question : Given that POWER, P=100µ W; Perform DC Analysis, Transient Analysis 
 
 Using the Formula for Power, 
 
-P=V*I/n
+P=V*I
 
 We will get the Values of Id as,
 
