@@ -54,10 +54,8 @@ Length and Width of the Channel used to obtain the given Current is shown in the
 
 # RESULT( Design-1):
  1) DC Analysis:
-     1. The calculated drain current (Id) matches the expected value based on power and voltage.
-     2. Effect of MOSFET Width:
-          1. Increasing the width of M1 significantly increases Id, while decreasing it reduces Id.
-     3. By adjusting the MOSFET’s channel dimensions (L & W), The current requirement was succesfully achecived.
+     1. The calculated drain current (Id) matches the expected value based on power and voltage, Id = 5.56*10^-5 A.
+     2. By adjusting the MOSFET’s channel dimensions (L & W) where L=175nm and W= 178nm, The current requirement was succesfully achecived.
      4. The circuit behaves as expected under DC conditions.
 
  2) Transient Analysis:
@@ -151,11 +149,10 @@ Now we will be performing the DC, Transient and AC Anlaysis;
 # RESULT(DESIGN-2)
 1.DC Analysis:
 
-   1. The calculated drain current (Id) aligns with the expected value based on power and voltage.
-   2. By fine-tuning the channel dimensions (L & W) of both MOSFETs ( M1 & M2), the desired current was achieved.
-   3. Effect of MOSFET Width:
-      1. Increasing the width of M2 significantly increases Id, while decreasing it reduces Id.
-      2. Increasing the width of M1 causes a small increase in Id, while decreasing it results in a slight reduction in Id.
+   1. The calculated drain current (Id) aligns with the expected value based on power and voltage, where the value of Id = 5.56*10^-5 A .
+   2. By fine-tuning the channel dimensions (L & W) of both MOSFETs ( M1 & M2), the desired current was achieved,
+         1. M1 : L= 500nm  , W= 950nm.
+         2. M2 : L= 300nm  , W= 1020nm.      
    4. The circuit operates correctly within the selected DC parameters.
 
 2.Transient Analysis:
