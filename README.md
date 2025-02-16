@@ -56,7 +56,7 @@ Length and Width of the Channel used to obtain the given Current is shown in the
  1) DC Analysis:
      1. The calculated drain current (Id) matches the expected value based on power and voltage.
      2. Effect of MOSFET Width:
-      1. Increasing the width of M1 significantly increases Id, while decreasing it reduces Id.
+          1. Increasing the width of M1 significantly increases Id, while decreasing it reduces Id.
      3. By adjusting the MOSFET’s channel dimensions (L & W), The current requirement was succesfully achecived.
      4. The circuit behaves as expected under DC conditions.
 
