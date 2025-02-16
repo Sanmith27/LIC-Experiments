@@ -33,7 +33,7 @@ Length and Width of the Channel used to obtain the given Current is shown in the
 2) Transient Analysis:
 
    Procedure for Performing Transient Analysis:
-   we have to select the Transient Analysis in the Edit Simulation Command,  Give the stop time as 1ms and Run th Simulation.
+   we have to select the Transient Analysis in the Edit Simulation Command,  Give the stop time as 1ms and Run the Simulation.
 
    ![Screenshot 2025-02-16 122038](https://github.com/user-attachments/assets/e43f0303-c135-4a82-bc71-12e6ae6000b9)
 
