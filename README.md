@@ -55,8 +55,10 @@ Length and Width of the Channel used to obtain the given Current is shown in the
 # RESULT( Design-1):
  1) DC Analysis:
      1. The calculated drain current (Id) matches the expected value based on power and voltage.
-     2. By adjusting the MOSFET’s channel dimensions (L & W), The current requirement was succesfully achecived.
-     3. The circuit behaves as expected under DC conditions.
+     2. Effect of MOSFET Width:
+      1. Increasing the width of M1 significantly increases Id, while decreasing it reduces Id.
+     3. By adjusting the MOSFET’s channel dimensions (L & W), The current requirement was succesfully achecived.
+     4. The circuit behaves as expected under DC conditions.
 
  2) Transient Analysis:
      1. The transient response graph shows how the circuit behaves over time.
@@ -70,8 +72,10 @@ Length and Width of the Channel used to obtain the given Current is shown in the
 
 # INFERENCE( Design-1):
    1. The experiment confirms that by properly selecting the MOSFET dimensions, we can control the drain current effectively.
-   2. The circuit performs well in all three analyses—DC, transient, and AC—demonstrating its reliability.
-   3. Overall, the design works as intended, following theoretical predictions and proving its practical feasibility.
+   2. Impact of Width Adjustments:
+     1. M1 has a influence on Id, meaning its width affects the output current.
+   3. The circuit performs well in all three analyses—DC, transient, and AC—demonstrating its reliability.
+   4. Overall, the design works as intended, following theoretical predictions and proving its practical feasibility.
 
 
 
@@ -144,4 +148,32 @@ Now we will be performing the DC, Transient and AC Anlaysis;
 
    ![Screenshot 2025-02-16 130145](https://github.com/user-attachments/assets/e24ddc06-ca3f-41da-b214-6e012222aa04)
 
-   
+# RESULT(DESIGN-2)
+1.DC Analysis:
+
+   1. The calculated drain current (Id) aligns with the expected value based on power and voltage.
+   2. By fine-tuning the channel dimensions (L & W) of both MOSFETs ( M1 & M2), the desired current was achieved.
+   3. Effect of MOSFET Width:
+      1. Increasing the width of M2 significantly increases Id, while decreasing it reduces Id.
+      2. Increasing the width of M1 causes a small increase in Id, while decreasing it results in a slight reduction in Id.
+   4. The circuit operates correctly within the selected DC parameters.
+
+2.Transient Analysis:
+
+   1. The transient response graph confirms that the circuit transitions smoothly over time.
+   2. The circuit responds effectively to input variations, indicating stable operation.
+
+3.AC Analysis:
+
+   1. The AC response graph confirms that the circuit maintains stability over the tested frequency range.
+   2. The gain and phase shift align with theoretical expectations.
+   3. The circuit functions as expected under AC conditions.
+
+# Inference (Design-2):
+  1. The experiment validates that by appropriately selecting the MOSFET dimensions (L & W), the drain current can be precisely controlled.
+  2. The voltage transfer characteristics (VTC) helped in selecting the correct operating voltage (0.8V) for saturation.
+  3. Impact of Width Adjustments:
+     
+     1. M2 has a stronger influence on Id, meaning its width significantly affects the output current.
+     2. M1 has a smaller influence, meaning changes in its width result in only minor variations in Id.
+  5. The design meets the expected performance criteria and follows theoretical predictions, demonstrating its feasibility in practical applications.
