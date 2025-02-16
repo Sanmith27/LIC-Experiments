@@ -71,7 +71,7 @@ Length and Width of the Channel used to obtain the given Current is shown in the
 # INFERENCE( Design-1):
    1. The experiment confirms that by properly selecting the MOSFET dimensions, we can control the drain current effectively.
    2. Impact of Width Adjustments:
-     1. M1 has a influence on Id, meaning its width affects the output current.
+         1. M1 has a influence on Id, meaning its width affects the output current.
    3. The circuit performs well in all three analyses—DC, transient, and AC—demonstrating its reliability.
    4. Overall, the design works as intended, following theoretical predictions and proving its practical feasibility.
 
