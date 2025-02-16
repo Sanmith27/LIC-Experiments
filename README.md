@@ -65,7 +65,7 @@ Length and Width of the Channel used to obtain the given Current is shown in the
 
  3) AC Analysis:
      1. The AC response graph confirms that the circuit remains stable at different frequencies.
-     2. The gain and phase shift align with theoretical expectations.
+     2. The gain(-9.94 dB) and phase shift align with theoretical expectations.
      3. The circuit maintains its performance across the tested frequency range.
 
 # INFERENCE( Design-1):
@@ -163,7 +163,7 @@ Now we will be performing the DC, Transient and AC Anlaysis;
 3.AC Analysis:
 
    1. The AC response graph confirms that the circuit maintains stability over the tested frequency range.
-   2. The gain and phase shift align with theoretical expectations.
+   2. The gain(8.5 AND 3.8DB) and phase shift align with theoretical expectations.
    3. The circuit functions as expected under AC conditions.
 
 # Inference (Design-2):
