@@ -71,7 +71,7 @@ Length and Width of the Channel used to obtain the given Current is shown in the
 # INFERENCE( Design-1):
    1. The experiment confirms that by properly selecting the MOSFET dimensions, we can control the drain current effectively.
    2. Impact of Width Adjustments:
-         1. M1 has a influence on Id, meaning its width affects the output current.
+         1. M1 has a influence on Id, meaning its width affects the output current. Increase in Width increases Id and Vice-versa.
    3. The circuit performs well in all three analyses—DC, transient, and AC—demonstrating its reliability.
    4. Overall, the design works as intended, following theoretical predictions and proving its practical feasibility.
 
@@ -171,6 +171,6 @@ Now we will be performing the DC, Transient and AC Anlaysis;
   2. The voltage transfer characteristics (VTC) helped in selecting the correct operating voltage (0.8V) for saturation.
   3. Impact of Width Adjustments:
      
-     1. M2 has a stronger influence on Id, meaning its width significantly affects the output current.
-     2. M1 has a smaller influence, meaning changes in its width result in only minor variations in Id.
+     1. M2 has a stronger influence on Id, meaning its width significantly affects the output current. Increase in width increases Id drastically and vice-versa.
+     2. M1 has a smaller influence, meaning changes in its width result in only minor variations in Id. Increase in qidth increases Id by small amounts and vice-versa.
   5. The design meets the expected performance criteria and follows theoretical predictions, demonstrating its feasibility in practical applications.
