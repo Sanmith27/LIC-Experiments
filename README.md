@@ -5,6 +5,20 @@ Question : Given that POWER, P=100µ W; Perform DC Analysis, Transient Analysis 
 
    ![Screenshot 2025-02-16 111936](https://github.com/user-attachments/assets/0b661ae7-5761-4b9b-bd75-93c0fc60eabb)
 
+Aim : To find DC operating point,find gain using transient analysis and AC analysis.
+
+Components : Mosfet,resistors,DC power supply.
+
+Procedure :
+
+• Make the circuit connection as show above.
+
+• Connect the RD resistor to the drain terminal and DC power supply to the gate terminal as well as to the resistor.
+
+• Connect the source terminal to the ground.
+
+• Set the input voltage to 0.9 V and VDD to 1.8 V.
+
 Using the Formula for Power, 
 
 P=V*I
@@ -80,6 +94,20 @@ Length and Width of the Channel used to obtain the given Current is shown in the
 # Design-2
 
 ![Screenshot 2025-02-16 124234](https://github.com/user-attachments/assets/59e297de-ed5d-426c-8e40-92aee8d3e793)
+
+Aim : To find DC operating point,find gain using transient analysis and AC analysis.
+
+Components : Mosfets (M1 and M2),DC power supply.
+
+Procedure :
+
+• Make the circuit connection as show above.
+
+• Connect the RD resistor to the drain terminal and DC power supply to the gate terminal as well as to the resistor.
+
+• Connect the source terminal to the ground.
+
+• Set the input voltage by obtaining VTC curve and VDD to 1.8 V.
 
 Using the Formula for Power, 
 
