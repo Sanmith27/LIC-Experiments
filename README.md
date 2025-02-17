@@ -103,7 +103,7 @@ Procedure :
 
 • Make the circuit connection as show above.
 
-• Connect the RD resistor to the drain terminal and DC power supply to the gate terminal as well as to the resistor.
+• Connect DC power supply to the gate terminal.
 
 • Connect the source terminal to the ground.
 
