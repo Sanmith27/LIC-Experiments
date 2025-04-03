@@ -3,7 +3,7 @@
 ### **Differential Amplifier**
 
 A differential amplifier is a key circuit in analog electronics that amplifies the difference between two input signals while rejecting common-mode signals (noise). It is widely used in operational amplifiers (op-amps), instrumentation amplifiers, and analog circuits.
-A basic MOSFET differential amplifier consists of:
+A basic MOSFET differential amplifier consists of: 
 
 Two matched MOSFETs (M1 and M2) forming a differential pair
 
