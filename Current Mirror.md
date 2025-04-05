@@ -33,7 +33,7 @@ A current mirror operates based on the concept that two identical transistors, w
   
   I<sub>REF</sub> = I<sub>TOTAL</sub>/2 = 0.555m/2 = 0.277 mA
 
-  ![image](https://github.com/user-attachments/assets/447ece28-ac43-4665-80a8-c03dfc3096f5)
+ ![Screenshot 2025-04-06 000334](https://github.com/user-attachments/assets/794cb30c-03a8-4cd0-bace-5ccb617ce7c0)
 
 |Parameters | PMOS(M1)| PMOS(M2) | NMOS(M3) |
 |-----|----|----|----|
@@ -49,7 +49,8 @@ A current mirror operates based on the concept that two identical transistors, w
 from the above graph we can set the biasing voltage as 0.85 V. 
  ### DC Analysis
  
- ![image](https://github.com/user-attachments/assets/315d8e80-e30b-43b3-8125-a9d5f803c825)
+ ![Screenshot 2025-04-06 000352](https://github.com/user-attachments/assets/19d64411-edeb-401d-9cc1-05c9c5dddfb0)
+
 
 By changing the length of the NMOSFET to 500 nm and 1 um but keeping the W/L ratio the same we observe some changes in the V<sub>out</sub> and I<sub>D</sub>.
 
@@ -104,8 +105,8 @@ Gain=V<sub>out</sub>/V<sub>in</sub>=-300mV/25mV= -12 V/V
 
  ### 4.2 Simulation.
  ### DC Analysis
- 
- ![image](https://github.com/user-attachments/assets/a22ed3e0-1f72-48c6-bae5-bf55954379f8)
+
+ ![Screenshot 2025-04-06 000639](https://github.com/user-attachments/assets/7debf9e2-f885-408b-821b-455ae604c434)
 
 By changing the length of the NMOSFET to 500 nm and 1 um but keeping the W/L ratio the same we observe some changes in the V<sub>out</sub> and I<sub>D</sub>.
 
