@@ -147,7 +147,7 @@ This circuit is a CMOS Differential Amplifier with a Current Mirror Load, common
 
 ### DC ANALYSIS :<br>
 
-![image](https://github.com/user-attachments/assets/63838f5f-c1ec-4d6f-b3ad-e8dcdfa2ea9c)
+![image](https://github.com/user-attachments/assets/a786d58d-91ad-43ec-9211-ab123f925352)
 
 | Parameter    | Theoretical value  | Practical value |
 |--------------|--------------------|-----------------|
