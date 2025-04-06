@@ -136,60 +136,73 @@ Gain=V<sub>out</sub>/V<sub>in</sub>=-280mV/25mV= -11.2 V/V
 | Av (V/V) | 10 | 11.2 |
 | Av (dB) | 20 | 20.9 |    
 
-### Design B
-Design the differential amplifier using the same design specification as Experiment_3. 
+## PART - B <br>
+## SIMULATION : Differential Amplifier with Current Mirror Load <br>
 
-- V<sub>DD</sub>=3.3 V
-- p<=3 mW
-- V<sub>ICM</sub>=1.65 V
-- V<sub>ocm</sub>=1.7 V
-- V<sub>P</sub>=0.5 V
-### Circuit
- from calculation we have found I<sub>SS</sub> value as 0.909 mA <br>
-I<sub>D1</sub> and I<sub>D2</sub> as 0.45 mA <br>
-the ratio is 1:2 thus I<sub>REF</sub>=I<sub>SS</sub>/2 = 0.45 mA <br>
+### Design differential amplifie for following specifications Vdd=2.5V, P≤3mW, Vicm = 1.3V, Vocm = 1.4V, Vp = 0.5V. Perform DC analysis, transient analysis & frequency response and extract the required parameters.
 
-![image](https://github.com/user-attachments/assets/9c633fb7-f2ac-4100-9e4e-6ccf9117df9f)
+![image](https://github.com/user-attachments/assets/d3d28dfb-8522-43b2-a0b6-ed6ff853c3c9)
 
- 
- |Parameters | PMOS(M3)| PMOS(M4) | NMOS(M1) | NMOS(M2) | NMOS(M5) | NMOS(M6) | 
-|-----|----|----|----|----|----|-----|
-| Length| 180 nm |180 nm | 180 nm | 180 nm | 1 um | 1 um | 
-| Width | 2.214 um | 2.214 um | 1.82 um | 1.82 um | 220 um |110 um |  
+This circuit is a CMOS Differential Amplifier with a Current Mirror Load, commonly used as the input stage of an Operational Amplifier (Op-Amp) or as a Comparator. It amplifies the difference between two input voltages (Vin1, Vin2) while rejecting common-mode signals<br>
 
- ###  Simulation.
- ### DC Analysis
- 
-![image](https://github.com/user-attachments/assets/d18c3841-44cb-4ce6-a557-c2b1e7fec90a)
+### DC ANALYSIS :<br>
 
-### Transient Analysis
+![image](https://github.com/user-attachments/assets/3ee81caf-0256-4256-81db-bab6aa95763f)
 
-![image](https://github.com/user-attachments/assets/092173af-e22a-42ed-b386-c3fa881e69f6)
+| Parameter    | Theoretical value  | Practical value |
+|--------------|--------------------|-----------------|
+|Voutcm        | 1.40V              | 1.40V           |
+|Vp            | 0.5V               | 0.62V           |
+|Id1,Id2       | 0.5mA              | 0.48mA          |
+|Iss           | 1mA                | 0.96mA          |
+|Id3,Id4       |0.5mA               | 0.48mA          |
+|Iref          |0.5mA               | 0.5mA           |
 
-Gain=V<sub>out</sub>/V<sub>in</sub>=-65 mV/2mV= -2.6 V/V
-### AC Analysis
+### TRANSIENT ANALYSIS : <BR>
 
-![image](https://github.com/user-attachments/assets/3397b664-e436-4bc1-9854-8b8507444979)
+#### For Vin < 1.3V <br>
+i.e Vin(min) = 0V<br>
 
-- Gain Av = 4.5 dB.
-### 5.Inference
-When the length is increased and the W/L ratio of the NMOS is kept constant.
--  V<sub>out</sub> decreases, ie **output resistance** increases.
-- **Drain current I<sub>D</sub> slightly increases** with increasing channel length, due to reduced channel-length modulation effects.
-- Higher **L** results in **better current matching and stability** in the current mirror.
-- 
+![0V](https://github.com/user-attachments/assets/82261936-55e7-462b-a3c2-827fed7602a0)
 
-| **Feature**                  | **1:1 Ratio Current Mirror** | **1:2 Ratio Current Mirror** | **Inference** |
-|------------------------------|-----------------------------|-----------------------------|--------------|
-| **Current Accuracy**         | Higher accuracy due to identical transistor sizes. | Slight difference due to different transistor widths. | 1:1 ratio provides better current matching. |
-| **Transistor Sizing**        | Smaller transistors, requiring less area. | Larger transistor widths needed, increasing area consumption. | 1:1 ratio is more efficient in terms of chip area. |
-| **Output Resistance** | **Higher**, as longer **L** reduces $lambda$ , increasing r<sub>out</sub> . | **Slightly lower**, as larger transistor widths may introduce mismatch, slightly increasing $lambda$. | 1:1 ratio provides better stability due to **higher output resistance**. |
-| **Power Consumption**        | Lower due to smaller transistors. | Slightly higher due to increased transistor sizes. | 1:2 ratio consumes more power due to larger devices. |
-| **Design Complexity**        | Easier to implement and match. | Requires careful selection of width . | 1:1 ratio is simpler to design and optimize. |
+For Vin=0V also the amplification takes place with high output peak to peak.<br>
 
+#### For Vin > 1.3V <br>
 
+i.e Vin = 1.3V<br>
 
-- A differential amplifier performs better when a **current mirror** is used instead of a **resistor load**.  
-- use of additional MOSFETs increases **complexity of the circuit**.
-- using current mirror **enhances gain and stability** of the differential amplifier.
-- current mirror **Reduces offset variations**.
+![image](https://github.com/user-attachments/assets/515200f5-8d67-4ac9-bbf2-6f2af429d284)
+
+Voutpp = 1.39+1.40 = 2.79V 
+
+i.e Vin = 3V<br>
+![image](https://github.com/user-attachments/assets/7554c19d-2c68-4bdd-85f1-6657fd18782a)
+
+there is a distortion in output wavwform <br>
+
+Therefore <br>
+|Parameter      |Theory value  | Practical value |
+|---------------|--------------|-----------------|
+|Vincm(min)     | 0.86V        | 0V              |
+|Vincm(max)     | 1.76V        | 2.79V           |
+
+### AC ANALYSIS :<br>
+
+![ac ](https://github.com/user-attachments/assets/132c0fff-c2c5-486c-8498-45c254ff8361)
+
+Av (dB) = 32.2 dB<br>
+Av (in V/V) = 10^(32.2/20) = 40.7V/V
+Now,<br>
+3dB gain = 32.2 - 3 = 29.2V/V <br>
+Bandwith = 7GMHz <br>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#### Inference:<br>
+* Differential Pair (M3 & M4) : Vin1 and Vin2 and generates a differential current.Operates in saturation for linear amplification.
+* Current Mirror Load (M1 & M2) :Converts the differential current into a single-ended output.Provides high gain by increasing output resistance.
+* Biasing Current Source (M6) : Ensures a constant bias current for stable operation.Determines the gain and bandwidth of the amplifier.
+* Active Load (M5):Helps improve the circuit's linearity and output swing.
+* Output Distortion for Vin <0.5V : If Vin is too low, M3 or M4 enter triode, causing distortion.Proper biasing is required to maintain transistors in saturation.
+* Channel Length Modulation Effect: Causes a slight increase in drain current as Vds increases.
+* Affects output voltage but is minimized by using longer channel lengths.
