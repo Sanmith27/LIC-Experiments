@@ -206,3 +206,24 @@ Bandwith = 7GMHz <br>
 * Output Distortion for Vin <0.5V : If Vin is too low, M3 or M4 enter triode, causing distortion.Proper biasing is required to maintain transistors in saturation.
 * Channel Length Modulation Effect: Causes a slight increase in drain current as Vds increases.
 * Affects output voltage but is minimized by using longer channel lengths.
+
+- When the length is increased and the W/L ratio of the NMOS is kept constant.
+-  V<sub>out</sub> decreases, ie **output resistance** increases.
+- **Drain current I<sub>D</sub> slightly increases** with increasing channel length, due to reduced channel-length modulation effects.
+- Higher **L** results in **better current matching and stability** in the current mirror.
+
+
+| **Feature**                  | **1:1 Ratio Current Mirror** | **1:2 Ratio Current Mirror** | **Inference** |
+|------------------------------|-----------------------------|-----------------------------|--------------|
+| **Current Accuracy**         | Higher accuracy due to identical transistor sizes. | Slight difference due to different transistor widths. | 1:1 ratio provides better current matching. |
+| **Transistor Sizing**        | Smaller transistors, requiring less area. | Larger transistor widths needed, increasing area consumption. | 1:1 ratio is more efficient in terms of chip area. |
+| **Output Resistance** | **Higher**, as longer **L** reduces $lambda$ , increasing r<sub>out</sub> . | **Slightly lower**, as larger transistor widths may introduce mismatch, slightly increasing $lambda$. | 1:1 ratio provides better stability due to **higher output resistance**. |
+| **Power Consumption**        | Lower due to smaller transistors. | Slightly higher due to increased transistor sizes. | 1:2 ratio consumes more power due to larger devices. |
+| **Design Complexity**        | Easier to implement and match. | Requires careful selection of width . | 1:1 ratio is simpler to design and optimize. |
+
+
+
+- A differential amplifier performs better when a **current mirror** is used instead of a **resistor load**.  
+- use of additional MOSFETs increases **complexity of the circuit**.
+- using current mirror **enhances gain and stability** of the differential amplifier.
+- current mirror **Reduces offset variations**.
