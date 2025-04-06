@@ -15,7 +15,7 @@ Used in operational amplifiers, instrumentation amplifiers, and analog front-end
 Perform DC analysis , Transient analysis , frequency response and extract the parameters.
 
 ### *circuit diagram and design
-![Alt image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/circuit%20design.jpg?raw=true)
+![image](https://github.com/user-attachments/assets/1f700de5-d8ae-4941-a449-fb527b43cbba)
 
 ### *Working of MOSFET-Based Differential Amplifier
 A FET-based differential amplifier operates by amplifying the voltage difference between two input signals while rejecting common-mode signals. It is commonly implemented using MOSFETs or JFETs, providing high input impedance, low power consumption, and excellent noise immunity.
@@ -82,8 +82,8 @@ Larger Rd increases voltage gain.
 
  
  ## Circuit Diagram
- ![Alt image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c1.png?raw=true)
- 
+![image](https://github.com/user-attachments/assets/3c71586f-c386-43cb-8448-6e8073f6eb0a)
+
  
  ## DC Analysis
  Procedure 
@@ -92,8 +92,8 @@ Larger Rd increases voltage gain.
 <br>3. Even though the given parameter is 6mA ,it is bettter keep the value ratherthan exceeding , because in large scale millions and billions of transistors are used there power consumption of each fet will addup and make device less relaiable.<br>
 
  Oparating point
- ![Alt image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c1dc.png?raw=true)
- 
+ ![image](https://github.com/user-attachments/assets/633f2a2d-c50f-4620-add0-3bec03de1904)
+
 
 | Parameter    | Theoretical value  | Practical value |
 |--------------|--------------------|-----------------|
@@ -122,31 +122,31 @@ procedure
 * Run the simulation.
 * Our dc_offset = 1.3V and assume amplitude as 50mV and frequency as 1Khz<BR>
   ### Case 1: Vin <0.5V (50mV amp)<br>
-  ![Alt image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c1_bll.png?raw=true)
+  ![image](https://github.com/user-attachments/assets/f3484457-ad1e-4e26-aa81-78888713e1e7)
   <br> As we apply Vin as 0.4V sinewave(f=1kHz) with 50mV amolitude.
   As Vin is near to Vt(0.36V) operation of Fet is not linear infact Mi and M2 eneters to off state so output is not stable and linear.<br>
   vinp-p = 1mV<br>
   Vo is almost looks like DC voltage , Vo=2.5V<br>
   ### Case2 :vin>0.5V(50mV)<br>
-  ![Alt image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c1_ll.png?raw=true)
+  ![image](https://github.com/user-attachments/assets/814b646a-88dd-41fe-839c-f91cc7a4c9f8)
   In this case Vgs >Vt , Vds>Vov.
   Vinp-p =1V.<br>
   Vop-p = 4.08v<br>
   Hence the Vop-p is large we can consider 0.5V as Vin minimum value. But the theoretical Vop-p=2.8V But here it is exceeding it by large margin. This implies Vin musst be above 0.6V<br>
    ### Case3 :vin=1.3V(50mV) Designed value.<br>
-  ![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c1_Q.png?raw=true)
+  ![image](https://github.com/user-attachments/assets/7c4f6b98-d9fc-4ba1-949c-7bfe50bb8079)
   <br>Vinp-p = 2.6V<br>
   <br>Vop-p=2.83V<br>
   The theoretical max Vo is 2.8V .So this output is meeting required design conditions.<br>
   ### Case4 :vin>1.7V(50mV) <br>
-  ![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c1_ul.png?raw=true)
+  ![image](https://github.com/user-attachments/assets/cb7816d0-2e32-42a7-910c-4598ff1706ea)
   <br>Here the output is distorted so we can consider above the 1.6V Fet enters to triode region and output dies out.<br>
   ## AC Analysis
   #### Steps to get Ac analysis Waveform:
 - In simulation tab select AC Analysis.<br>
 - In the AC Analysis tab, select **Type of Sweep as Decade**.<br>
 - Enter the number of points per decade (ex:20) and the frequency range ( 0.1Hz to 1THz).<br>
-  ![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c1_ac.png?raw=true)
+  ![image](https://github.com/user-attachments/assets/8903ed73-80c1-4a9b-99d0-6dafa1f1b5b1)
 <br>theoretical Gain . <br>
 gain = Av= -gm*Rd 
 where gm= (2Id)/Vov = 2.72mS <br>
@@ -165,9 +165,9 @@ Bandwidth = 13GHz <br>
 # Circuit -2<br>
 ## Current Source-Loaded Differential Pair
 ### Circuit Diagram
-![Alt image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c2_.png?raw=true)
+![image](https://github.com/user-attachments/assets/3bae253d-a9a4-47bd-9346-8038b928b26b)
 ### DC Analysis 
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c2_dc.png?raw=true)
+![image](https://github.com/user-attachments/assets/3bb923ff-3375-49e5-b6b8-64787d43e810)
 the transistor to operate in saturation region ,<br>
 Vgs>Vth, <br>
 Vds> Vov <br>
@@ -194,13 +194,13 @@ procedure
 * Our dc_offset = 1.3V and assume amplitude as 50mV and frequency as 1Khz<BR>
 ### case 1: Vin =1.3V(50m amp)
 
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c2_Q.png?raw=true)
+![image](https://github.com/user-attachments/assets/8df6a0a9-1945-4003-af34-3960f2ade016)
 Vincmp-p = 2.6V <br>
 Vout p-p = 1.21 + 1.62 = 2.83V<br>
 From theoretical value wkt Vout(max)p-p = 2.80V <br>
 So in this input volatge we are getting the maximum output swing.<br>
 ### case 2: Vin =1.9(50m amp)
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c2_ul.png?raw=true)
+![image](https://github.com/user-attachments/assets/5211accb-48a3-49a3-b3c6-5a9424e68759)
 The transistor enters the triode region as Vds<Vov <br>
 <br>Output will become DC as we keep moving above 1.9V. So input max can be fixed as 1.9V.
  
@@ -209,7 +209,9 @@ The transistor enters the triode region as Vds<Vov <br>
 - In simulation tab select AC Analysis.<br>
 - In the AC Analysis tab, select **Type of Sweep as Decade**.<br>
 - Enter the number of points per decade (ex:20) and the frequency range ( 0.1Hz to 1THz).<br>
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c2_ac.png?raw=true)
+
+![image](https://github.com/user-attachments/assets/6d349b0b-c27e-44dd-a294-ad18c67cca7f)
+
 theoretical gain is 13.97dB <br>
   |Parameter      |Theory value  | Practical value |
   |---------------|--------------|-----------------|
@@ -220,7 +222,7 @@ theoretical gain is 13.97dB <br>
 
 ### Circuit Diagram:Simple Current Source Differential Pair
 
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c3.png?raw=true)
+![image](https://github.com/user-attachments/assets/bca0cebb-ea44-479a-8e53-517b213bd119)
 ### DC Analysis
 
 Vds = Vgs - Vt ( Vds = Vp = 0.4V )
@@ -230,7 +232,7 @@ Vbias = Vg = 0.8v(approx) ( Bias voltage at the gate for 3rd n type mosfet)
 
 The width and length of the differential pair MOSFETs remain unchanged, while the third MOSFET has a width of 16.9662um and a length of 180nm.<br>
 ## DC analysis
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c3_dc.png?raw=true)
+![image](https://github.com/user-attachments/assets/6fca31ff-f2a1-4120-bd37-1952921f6edd)
 **- Condition for transistor to operate in saturation region,**
 
 Vgs>Vth, 
@@ -242,13 +244,13 @@ It is satisfying the required condition therefore, the transistors lies in satur
 <br>Q point = (Vds,Id) = (0.9V,0.598mA).<br>
 ## Transeint Analysis
 ### Case 1: Vin =1.3V(50m amp)
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c3_Q.png?raw=true)
+![image](https://github.com/user-attachments/assets/ed928521-524d-418f-868c-2096b03403d1)
 Vincmp-p = 2.6V <br>
 Vout p-p = 1.21 + 1.62 = 2.83V<br>
 From theoretical value wkt Vout(max)p-p = 2.80V <br>
 So in this input volatge we are getting the maximum output swing.<br>
 ### case 2: Vin =2V(50m amp)
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c3_ul.png?raw=true)
+![image](https://github.com/user-attachments/assets/944fa600-ca01-43cb-9138-2f04a8598232)
 The transistor enters the triode region as Vds<Vov <br>
 <br>Output will become DC as we keep moving above 1.9V. So input max can be fixed as 1.9V.
  ## AC Analysis
@@ -256,7 +258,7 @@ The transistor enters the triode region as Vds<Vov <br>
 - In simulation tab select AC Analysis.<br>
 - In the AC Analysis tab, select **Type of Sweep as Decade**.<br>
 - Enter the number of points per decade (ex:20) and the frequency range ( 0.1Hz to 1THz).<br>
-![image](https://github.com/Harsha-B-1/LIC_4thsem/blob/main/c3_ac.png?raw=true)
+![image](https://github.com/user-attachments/assets/032618f8-9972-409b-a353-ca00ca49d721)
 theoretical gain is 13.97dB <br>
    |Parameter      |Theory value  | Practical value |
    |---------------|--------------|-----------------|
