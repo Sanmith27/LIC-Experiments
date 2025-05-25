@@ -16,9 +16,7 @@
 
 ###  Formula for Pulse Width
 
-\[
-T = 1.1 \times R \times C
-\]
+T = (1.1 * R * C)
 
 Where:
 - *T* = output pulse width (in seconds)
