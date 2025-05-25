@@ -109,5 +109,5 @@ A *monostable multivibrator* was successfully completed using the *555 timer IC*
 
 T = (1.1 * R * C)
 
-This experiment demonstrated how the 555 timer IC can be used to implement a monostable multivibrator, and how these circuits can be used for precise time-delay applications. As a specific example, I demonstrated how the multivibrator circuit could be used for generating a pulse with a pre-determined width, such as might be used for digital timing applications.
+This experiment demonstrated how the 555 timer IC can be used to implement a monostable multivibrator, and how these circuits can be used for precise time-delay applications. As a example, I demonstrated how the multivibrator circuit could be used for generating a pulse with a pre-determined width, such as might be used for digital timing applications.
 ---
