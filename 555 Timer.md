@@ -1,4 +1,6 @@
-# 555 Timer IC Monostable Multivibrator
+# 555 Timer IC 
+
+# 1) Monostable Multivibrator
 
  ## Objective
  To use the **555 timer IC** to design and build a **monostable multivibrator** that, when activated, produces an output pulse with a width of **0.5 milliseconds**.
