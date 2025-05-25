@@ -105,7 +105,7 @@ R = (T/(1.1 * C)) = (0.0005/(1.1* 1 *10^(-6))) = 454.54 Ω
 
 ##  Conclusion
 
-A *monostable multivibrator* was successfully completed using the *555 timer IC*. The circuit responded correctly to input triggers, generating a **precise 0.5 ms output pulse* as calculated using:
+A *monostable multivibrator* was successfully completed using the *555 timer IC*. The circuit responded correctly to input triggers, generating a precise 0.5 ms output pulse as calculated using:
 
 T = (1.1 * R * C)
 
