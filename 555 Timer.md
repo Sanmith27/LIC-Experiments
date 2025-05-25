@@ -71,7 +71,7 @@ R = (T/(1.1 * C)) = (0.0005/(1.1* 1 *10^(-6))) = 454.54 Ω
    - Pin 7 → Discharge
    - Pin 8 → Vcc (+5V)
 
-2. *Connect resistor (R)* between Vcc and pins 6 & 7.
+2. *Connect resistor (R)* between Vcc and pins 8 & 7.
 
 3. *Connect capacitor (C)* between pins 6 & 1 (GND).
 
