@@ -30,12 +30,11 @@ Where:
 | Component        | Value / Description          |
 |------------------|------------------------------|
 | 555 Timer IC     | 1                            |
-| Resistor (R)     | 454.54 Ω (approx)            |
+| Resistor (R)     | 454.54 Ω                     |
 | Capacitor (C)    | 1 µF                         |
 | DC Supply        | +5V                          |
 | Trigger Source   | Push button or pulse input   |
 | Load             | LED / Oscilloscope           |
-| Breadboard + Wires | For connections            |
 
 ---
 
@@ -50,7 +49,6 @@ Using the formula:
 R = (T/(1.1 * C)) = (0.0005/(1.1* 1 *10^(-6))) = 454.54 Ω
 
 
-Use a *470 Ω standard resistor* (close to calculated value).
 
 ---
 
