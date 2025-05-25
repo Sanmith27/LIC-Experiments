@@ -46,9 +46,9 @@ Given:
 - Capacitance C = 1 µF = 1×10⁻⁶ F
 
 Using the formula:
-\[
-R = \frac{T}{1.1 \times C} = \frac{0.0005}{1.1 \times 1 \times 10^{-6}} = 454.54 \, \Omega
-\]
+
+R = (T/(1.1 * C)) = (0.0005/(1.1*1*10^(-6))) = 454.54 \, \Omega
+
 
 Use a *470 Ω standard resistor* (close to calculated value).
 
