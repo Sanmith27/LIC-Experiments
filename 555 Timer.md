@@ -31,7 +31,7 @@ Where:
 |------------------|------------------------------|
 | 555 Timer IC     | 1                            |
 | Resistor (R)     | 454.54 Ω                     |
-| Capacitor (C)    | 1 µF , 0.01 µF               |
+| Capacitor (C)    | 1 µF , 0.1 µF                |
 | DC Supply        | +5V                          |
 | Trigger Source   | Push button or pulse input   |
 | Load             | LED / Oscilloscope           |
