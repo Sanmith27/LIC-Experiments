@@ -47,7 +47,7 @@ Given:
 
 Using the formula:
 
-R = (T/(1.1 * C)) = (0.0005/(1.1*1*10^(-6))) = 454.54 \, \Omega
+R = (T/(1.1 * C)) = (0.0005/(1.1* 1 *10^(-6))) = 454.54 Ω
 
 
 Use a *470 Ω standard resistor* (close to calculated value).
