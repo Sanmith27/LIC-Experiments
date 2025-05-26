@@ -123,6 +123,63 @@ The purpose of a clipper circuit is to "clip" or remove particular portions of a
 4.	Analyze the ton period when input is triggered.
 ## Calculation
 
-![WhatsApp Image 2025-05-26 at 09 39 26_5e390966](https://github.com/user-attachments/assets/699750e9-5e5c-481f-bf0a-d3841432e5f9)
+![WhatsApp Image 2025-05-26 at 19 22 47_aa4865f3](https://github.com/user-attachments/assets/71c8f508-ff1b-4fbc-844f-ef44d5e8a39f)
+
+## Circuit Diagram:
+
+![image](https://github.com/user-attachments/assets/fd60325d-b069-4f10-84c7-fe1e0f31741d)
+
+## Waveform
+### Case 1:
+![image](https://github.com/user-attachments/assets/fe342c52-308e-42f3-851a-70c9c03589ea)
+- **Waveform 1**: Output of an Astable Multivibrator.  
+- **Waveform 2**: Output of a Differentiator Circuit.  
+- **Waveform 3**: Output of a Positive Clipper Circuit.  
+- **Waveform 4**: Output of a Monostable Multivibrator (pulse width = 0.5 ms).
+
+### Case 2:
+![image](https://github.com/user-attachments/assets/67fc881d-9c7d-474f-820b-ce097d4eb4fc)
+
+- **Waveform 1**: Output of an astable multivibrator.
+- **Waveform 2**: Output of a differentiator circuit (with capacitor value 0.1 μF).
+- **Waveform 3**: Output of a positive clipper circuit.
+- **Waveform 4**: Output of a monostable multivibrator with a pulse width of 0.5 ms.
+
+### Case 3:
+![image](https://github.com/user-attachments/assets/ae9e3512-c7a0-4558-b374-863a79764954)
+
+![image](https://github.com/user-attachments/assets/eaabf927-36fd-4a83-a688-e3f012f7f605)
+
+
+- If the third waveform requires **t<sub>ON</sub> < t<sub>OFF</sub>**, which is not achievable with a typical astable multivibrator configuration, an **inverter** can be used to invert the generated pulse.
+- **Waveform 1**: This is the output of an **inverted astable multivibrator**.
+- **Waveform 2**: This comes from a **differentiator circuit**, where the capacitor used is **0.1 μF**.
+- **Waveform 3**: This is the output of a **positive clipper circuit**.
+- **Waveform 4**: This is the output of a **monostable multivibrator**, and the pulse width is set to **0.5 ms**.
+
+##  Inference
+
+- **Tuning ON/OFF Times Isn’t Always Easy**  
+  We tried changing resistor and capacitor values to adjust how long the signal stays ON or OFF. It works to an extent, but we can’t get all possible values with the standard 555 timer circuit.
+
+- **The 555 Timer Has Some Limitations**  
+  Especially in Case 3, where we wanted the OFF time to be longer than the ON time — the regular astable mode didn’t allow it. So, we had to flip the output using an inverter.
+
+- **Inverters Help When 555 Can’t Do It Alone**  
+  By adding a simple NOT gate (like using a transistor), we flipped the waveform. This gave us more flexibility and helped us get the timing we actually needed.
+
+- **Tiny Pulses Need Accurate Components**  
+  In Case 2, we dealt with super short pulses (in microseconds!). For that, we had to use small resistor and capacitor values. It showed us how important component accuracy is when working with tight timings.
+
+- **Differentiator Circuits Detect Edges**  
+  We used a differentiator to catch the rising edge of the signal (LOW to HIGH transition). That’s super useful when we only care about changes, not the full pulse.
+
+- **Monostable Mode Gives Clean Output**  
+  Using a monostable 555 with edge triggering gave us a consistent output every time. It’s a great way to get a fixed pulse width, no matter what the input looks
+
+
+
+
+
 
 
