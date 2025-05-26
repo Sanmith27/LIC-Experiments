@@ -22,7 +22,8 @@ The designed Two-Stage Miller OTA was simulated using LTspice. The following sec
 ## MOSFET Dimensions
 The table below summarizes the channel length and width of each MOSFET used in the circuit:
   _______________________________________________________________________
-  |  MOSFET name  |	Channel length in nm	 |     Channel width in µm    |
+  |**MOSFET name**|**Channel length in nm**|   **Channel width in µm**  |
+  |---------------|------------------------|----------------------------|
   |      M1	      |        180	           |            80              |  
   |      M2       |     	 180	           |            80              |        
   |      M3       |   	   180             |            20              |   
@@ -31,4 +32,53 @@ The table below summarizes the channel length and width of each MOSFET used in t
   |      M6	      |        180             |           	30              |   
   |      M7       |        180	           |            30              |
   |      M8	      |        180	           |            10              |
-  |_______________|________________________|____________________________|
+
+ ## DC ANALYSIS:
+The DC analysis determines the static power consumption of the OTA. The power consumption is calculated as:
+Power = VDD × (I_M6 + I_M7 + I_M8)= 0.613 mW
+Where VDD = 1.8V, and the currents are measured from the DC operating point simulation.
+![image](https://github.com/user-attachments/assets/9c75995b-764d-4ba0-ad71-2648228b6aac) ![image](https://github.com/user-attachments/assets/8f945727-ac32-459f-b473-979a23e178da)
+
+## TRANSIENT ANALYSIS:
+Transient analysis was carried out under differential and common-mode inputs:
+- Differential Mode: A step input was applied differentially to Vin+ and Vin-.
+![image](https://github.com/user-attachments/assets/9a9859aa-e58e-4392-9627-09cb4f1594e1)
+
+- Common Mode: Identical inputs were applied to both Vin+ and Vin-.
+The output response was used to analyze slew rate.
+![image](https://github.com/user-attachments/assets/e4efb06f-7306-447c-a833-b9e287752c03)
+
+- Differential mode gain = 1400 V/V or 62.9 dB
+- Common mode gain = 0.562 V/V or -5dB
+- Common mode rejection ratio = 67.94 dB
+
+## FREQUENCY RESPONSE:
+
+The frequency response was evaluated by applying an AC sweep in two scenarios:
+
+- Differential Mode: Vin+ = 0V, Vin- swept.
+![image](https://github.com/user-attachments/assets/d99063ae-ae9d-4a86-9b25-da682b2e948e)
+- Bandwidth = 310 kHz
+
+- Common Mode: Vin+ = Vin-, both signals identical.
+
+
+ ![image](https://github.com/user-attachments/assets/5e643900-054f-4aa2-ae3a-372a1d028105)
+
+The results include gain-bandwidth product, phase margin, and unity-gain frequency.
+
+## INPUT OFFSET VOLTAGE:
+The input offset voltage was extracted by applying a zero differential input and measuring the deviation from 0V at the output. This helps evaluate the mismatch between the input differential pair.
+ ![image](https://github.com/user-attachments/assets/8e5bf42b-8114-48f6-8c9a-e6eff4c8d27a)
+
+## CONCLUSION
+The designed Two-Stage Miller OTA exhibits characteristics suitable for low-power and high-gain analog signal processing. The use of Miller compensation ensures stable frequency behavior and a satisfactory phase margin. Simulation results confirm the performance across DC, transient, and frequency domains.
+
+
+
+
+
+
+
+
+
