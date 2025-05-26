@@ -110,3 +110,19 @@ T = (1.1 * R * C)
 
 This experiment demonstrated how the 555 timer IC can be used to implement a monostable multivibrator, and how these circuits can be used for precise time-delay applications. As a example, I demonstrated how the multivibrator circuit could be used for generating a pulse with a pre-determined width, such as might be used for digital timing applications.
 ---
+
+# Astable Multivibrator
+## Objective
+Astable multivibrators, also known as "free-running" multivibrators, are circuits that continuously generate a rectangular waveform without the need for external triggering. Unlike a monostable multivibrator, it alters its output states on its own. The duration of its high and low output phases is controlled by a 555 timer integrated circuit connected to two external resistors and a capacitor.
+Unlike an integrator circuit, a differentiator amplifier circuit has the resistor and capacitor positioned in the opposite directions. A resistor is utilized in the feedback path, and the capacitor is connected to the inverting operational amplifier's input. This arrangement enables the circuit to carry out the differentiation mathematical operation. More input current is produced when the input voltage varies quickly or dramatically, which causes a more noticeable voltage change at the output, frequently manifesting as a sharp spike. A key factor in determining how the differentiator behaves is the RC network, namely the reactance of the capacitor.
+The purpose of a clipper circuit is to "clip" or remove particular portions of a waveform, like undesired negative voltage spikes. A monostable multivibrator is then activated by the clipped signal that results.
+## Procedure
+1.	Build the circuit as per the Circuit diagram.
+2.	Calculate the resistor R and capacitor C for Astable multivibrator Differentiator, clipper and Monostable multivibrator.
+3.	Analyze the capacitor charging and discharging Voltage per time.
+4.	Analyze the ton period when input is triggered.
+## Calculation
+
+![WhatsApp Image 2025-05-26 at 09 39 26_5e390966](https://github.com/user-attachments/assets/699750e9-5e5c-481f-bf0a-d3841432e5f9)
+
+
