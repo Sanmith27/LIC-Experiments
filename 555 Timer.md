@@ -160,7 +160,7 @@ The purpose of a clipper circuit is to "clip" or remove particular portions of a
 ##  Inference
 
 - **Tuning ON/OFF Times Isn’t Always Easy**  
-  We tried changing resistor and capacitor values to adjust how long the signal stays ON or OFF. It works to an extent, but we can’t get all possible values with the standard 555 timer circuit.
+  I tried changing resistor and capacitor values to adjust how long the signal stays ON or OFF. It works to an extent, but we can’t get all possible values with the standard 555 timer circuit.
 
 - **The 555 Timer Has Some Limitations**  
   Especially in Case 3, where we wanted the OFF time to be longer than the ON time — the regular astable mode didn’t allow it. So, we had to flip the output using an inverter.
@@ -178,8 +178,33 @@ The purpose of a clipper circuit is to "clip" or remove particular portions of a
   Using a monostable 555 with edge triggering gave us a consistent output every time. It’s a great way to get a fixed pulse width, no matter what the input looks
 
 
+# Simulation in Virtual Lab
+# Astable Multivibrator
+## Procedure:
+1.	Connect the components as mentioned below: L1-L12, L14-L12, L16-L12, L4-L9, L8-L9, L10-L19, L3-L17, L11-L13, L7-L19, L6-L13, L2-L13, L5-L15, L18-L9.(For eg. click on 1 and then drag to 12 and so on.)
+2.	Click on 'Check Connection' button to check the connections.
+3.	If connected wrong, click on the wrong connection. Else click on 'Delete all connection' button to erase all the connections.
+4.	Intially set R a=3.3 kΩ, R b=6.8kΩ, C=0.1µf, Vcc=5 V.
+5.	Click on "Calculate" button.
+6.	Now note the output voltage.
+7.	Click on "Plot" button to plot Output Voltage, Capacitance Voltage
+8.	Click on "Clear" button to clear the data.
+9.	Repeat the experiment for another set of resistance value.
+10.	Set the Resistance (Ra) value (1 kΩ - 10 kΩ).
+11.	Set the Resistance (Rb) value (1 kΩ - 10 kΩ).
+12.	Set the Capacitance (C) value (0.1 µf - 10 µf) .
+13.	Set supply voltage (Vcc).
+
+## Circuit Diagram
+![image](https://github.com/user-attachments/assets/f4f78504-d27d-411e-9c26-4689fe0bc509)
+
+## Otuput Waveform
+Voltage Across the Capacitor: 
+
+![image](https://github.com/user-attachments/assets/2db90498-553e-4eda-b996-ef76d576d0c9)
 
 
+Output Waveform: -
 
-
+![image](https://github.com/user-attachments/assets/1ec6ba06-4a35-45d0-804e-2869928451cf)
 
